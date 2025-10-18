@@ -736,7 +736,7 @@ ul.social-icons svg {
 
 /*. Custom-Checkbox       */
 .form-agreement {
-    margin-bottom: 40px;
+    margin-bottom: 24px; 
 
 }
 
@@ -756,6 +756,12 @@ ul.social-icons svg {
     transition-property: border-color, background-color;
 
 
+}
+.agreement-wrapper {
+    font-size: 12px; 
+    line-height: 1.17; 
+    letter-spacing: 0.04em;
+    
 }
 
 input[type="checkbox"]:checked+.agreement-wrapper>.agreement-checkbox {
