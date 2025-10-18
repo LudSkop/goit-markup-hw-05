@@ -567,7 +567,7 @@ ul.social-icons svg {
 .footer-input::placeholder {
     color: #ffffff;
 }
-.footer-botton {
+.footer-button {
     min-width: 165px; 
     height: 40px; 
     display: flex; 
