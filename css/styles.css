@@ -225,7 +225,7 @@ img {
     display:flex;
     gap: 24px;
 }
-
+/*. ховаю чекбокс і заголовок  */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -531,3 +531,136 @@ ul.social-icons {
 ul.social-icons svg {
     fill: #f4f4fd ; 
 }
+
+
+/*.   modal. */
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 999;
+    
+}
+.modal {
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 408px;
+    min-height: 584px;
+
+    background-color: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 72px 24px 24px 24px;
+    box-sizing: border-box;
+}
+
+.modal-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #111111;
+    border: red;
+    transition: color 250ms ease-in;
+}
+
+
+
+
+.modal-button-icon {
+    fill: currentColor;
+}
+.modal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+.modal-form-field {
+    margin-bottom: 18px;
+}
+.modal-form-label {
+    display: block;
+    margin-bottom: 8px;
+} 
+.form-input {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 11px 38px;
+}
+.modal-form-icon {
+
+}
+
+
+
+
+/*. Custom-Checkbox       */
+.form-agreement {
+    margin-bottom: 40px;
+
+}
+
+.agreement-checkbox {
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    transition-property: border-color, background-color;
+
+
+}
+
+input[type="checkbox"]:checked+.agreement-wrapper>.agreement-checkbox {
+    background-color: blue;
+    border-color: bisque;
+    color: #fff;
+}
+
+.agreement-checkbox-icon {
+    fill: currentColor;
+
+}
+
+.accent-tex {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+
+}
+
+.agreement-link {
+
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+
