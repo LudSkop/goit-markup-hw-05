@@ -803,22 +803,17 @@ body:has(.backdrop.is-open) {
 /*
 input[type="checkbox"]:checked+.agreement-wrapper > .agreement-checkbox {
     background-color:#404bbf;
-    color: #fff;
+    color: #F4F4FD;
     border: none;
 }*/
-input[type="checkbox"]:checked+.agreement-wrapper .agreement-checkbox {
-    background-color: var(--accent-color);
+.checkbox-input:checked + .agreement-wrapper .agreement-checkbox {
+    background-color: #404bbf;
     border: none;
-    fill: var(--icon-color);
+    fill: #F4F4FD;
 }
 
 
-.agreement-input:checked + .agreement-checkbox .agreement-checkbox-icon {
-  fill: #f4f4fd;
-}
-.agreement-checkbox-icon {
-    fill: currentColor;
-}
+
 
 
 
