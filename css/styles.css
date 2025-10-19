@@ -777,7 +777,7 @@ border-radius: 2px;
 background-color: transparent;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 cursor: pointer;
-border: 1px solid #2e2f42;
+border: 1px solid rgba(46, 47, 66, 0.4);
 
 color: transparent;
 fill: transparent;
@@ -809,7 +809,8 @@ transition:
 /*input:checked + label > span */
 .checkbox-input:checked + .agreement-wrapper > .agreement-checkbox {
   background-color: #404bbf; 
-  border: none; 
+  border: none;
+  fill: #F4F4FD;
               
 }
 
