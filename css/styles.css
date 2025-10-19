@@ -670,9 +670,12 @@ ul.social-icons svg {
     color: #2e2f42;
     margin-bottom: 16px;
 }
-.modal-form-field {
-    
+.modal-form-first {
     margin-bottom: 8px;
+
+}
+.modal-form-field {
+    margin-bottom: 16px;
     
 }
 .modal-form-label {
@@ -782,6 +785,8 @@ input[type="checkbox"]:checked+.agreement-wrapper>.agreement-checkbox {
 }
 .input:checked .agreement-checkbox {
     background-color: #404bbf;
+    fill: #F4F4FD;
+    border: none;
 }
 .agreement-input:checked + .agreement-checkbox .agreement-checkbox-icon {
   fill: #f4f4fd;
