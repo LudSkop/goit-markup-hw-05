@@ -803,13 +803,15 @@ body:has(.backdrop.is-open) {
 .checkbox-input:checked + .agreement-wrapper > .agreement-checkbox {
   background-color: #404bbf; 
   border: none; 
-  fill: #F4F4FD;             
+              
 }
 
 /* Колір галочки всередині SVG при checked */
-.checkbox-input:checked + .agreement-wrapper .agreement-checkbox .agreement-checkbox-icon {
+.checkbox-input:checked + .agreement-wrapper .agreement-checkbox > .agreement-checkbox-icon {
   fill: #F4F4FD;            /* колір галочки */
 }
+
+
 
 
 .accent-tex {
