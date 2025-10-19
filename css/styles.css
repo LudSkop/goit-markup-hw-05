@@ -763,6 +763,12 @@ body:has(.backdrop.is-open) {
 
 
 /*. Custom-Checkbox       */
+:root {
+    --accent-color: #404bbf;
+    --icon-color: #f4f4fd;
+}
+
+
 .form-agreement {
     margin-bottom: 24px; 
 
@@ -776,7 +782,6 @@ body:has(.backdrop.is-open) {
     height: 16px;
     margin-right: 12px;
     border-radius: 2px;
-    
     background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -795,12 +800,16 @@ body:has(.backdrop.is-open) {
     color: #8e8f99; 
 
 }
-
+/*
 input[type="checkbox"]:checked+.agreement-wrapper > .agreement-checkbox {
     background-color:#404bbf;
     color: #fff;
     border: none;
-
+}*/
+input[type="checkbox"]:checked+.agreement-wrapper .agreement-checkbox {
+    background-color: var(--accent-color);
+    border: none;
+    fill: var(--icon-color);
 }
 
 
