@@ -799,7 +799,7 @@ body:has(.backdrop.is-open) {
 }
 
 
-.checkbox-input:checked + .agreement-wrapper .agreement-checkbox {
+.checkbox-input:checked + .agreement-wrapper > .agreement-checkbox {
   background-color: #404bbf; 
   border: none;              
 }
@@ -808,93 +808,6 @@ body:has(.backdrop.is-open) {
 .checkbox-input:checked + .agreement-wrapper .agreement-checkbox .agreement-checkbox-icon {
   fill: #F4F4FD;            /* колір галочки */
 }
-
-
-
-/*
-.agreement-checkbox {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 16px;
-    height: 16px;
-    margin-right: 12px;
-    border-radius: 2px;
-    background-color: transparent;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    color: transparent;
-    fill: transparent;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        }
-.agreement-wrapper {
-    font-size: 12px; 
-    line-height: 1.17; 
-    letter-spacing: 0.04em;
-    color: #8e8f99; 
-
-}
-/*
-input[type="checkbox"]:checked+.agreement-wrapper > .agreement-checkbox {
-    background-color:#404bbf;
-    color: #F4F4FD;
-    border: none;
-}
-.agreement-checkbox-icon {
-    fill: transparent;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.checkbox-input:checked+.agreement-wrapper .agreement-checkbox {
-    background-color: #404bbf;
-    border: none;
-}
-
-.checkbox-input:checked+.agreement-wrapper .agreement-checkbox .agreement-checkbox-icon {
-    fill: #F4F4FD;
-}
-:root {
-    --checkbox-active-bg: #404bbf;
- 
-    --checkbox-icon-color: #F4F4FD;
- 
-}
-.checkbox-input:checked+.agreement-wrapper .agreement-checkbox {
-    background-color: var(--checkbox-active-bg);
-  
-    border: none;
-    fill: var(--checkbox-icon-color);
-
-
-}
-.checkbox-input:checked+.agreement-wrapper .agreement-checkbox {
-    background-color: #404bbf;
-   
-    border: none;
-    
-    fill: #F4F4FD;
-    }
-.checkbox-input:checked+.agreement-wrapper .agreement-checkbox {
-    background-color: #404bbf;
-   
-    border: none;
-   
-    fill: #F4F4FD;
-    */
-
-
-
-
-
-
-
-
-
-
 
 
 .accent-tex {
