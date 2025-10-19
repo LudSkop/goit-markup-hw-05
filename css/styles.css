@@ -670,12 +670,10 @@ ul.social-icons svg {
     color: #2e2f42;
     margin-bottom: 16px;
 }
-.modal-form-first {
-    margin-bottom: 8px;
 
-}
 .modal-form-field {
     margin-bottom: 16px;
+    margin-bottom: 8px;
     
 }
 .modal-form-label {
@@ -758,7 +756,6 @@ ul.social-icons svg {
     height: 16px;
     margin-right: 12px;
     border-radius: 2px;
-   
     fill: transparent; 
     border: 1px solid rgba(46, 47, 66, 0.4);
 
@@ -783,7 +780,7 @@ input[type="checkbox"]:checked+.agreement-wrapper>.agreement-checkbox {
     background-color:#404bbf;
     color: #fff;
 }
-.input:checked .agreement-checkbox {
+.input[type="checkbox"]:checked .agreement-checkbox-icon {
     background-color: #404bbf;
     fill: #F4F4FD;
     border: none;
