@@ -806,11 +806,19 @@ input[type="checkbox"]:checked+.agreement-wrapper > .agreement-checkbox {
     color: #F4F4FD;
     border: none;
 }*/
-.checkbox-input:checked + .agreement-wrapper .agreement-checkbox {
+.agreement-checkbox-icon {
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-input:checked+.agreement-wrapper .agreement-checkbox {
     background-color: #404bbf;
     border: none;
+}
+
+.checkbox-input:checked+.agreement-wrapper .agreement-checkbox .agreement-checkbox-icon {
     fill: #F4F4FD;
 }
+
 
 
 
