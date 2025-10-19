@@ -454,6 +454,7 @@ img {
 .social-container {
   display: flex;
   flex-direction: column; /* текст зверху, іконки під ним */
+  margin-right: 80px;
 }
 
 .social-list {
@@ -531,10 +532,7 @@ ul.social-icons {
 ul.social-icons svg {
     fill: #f4f4fd ; 
 }
-.footer-modal-container{
 
-
-}
 .footer-modal-text {
     margin-bottom: 16px;
     font-weight: 500;
@@ -604,9 +602,28 @@ ul.social-icons svg {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     z-index: 999;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    
-}
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /*-----ховаю вікно     ----->*/
+    opacity: 0;
+    pointer-events: none;
+    /*даю можливість клікати на сторінку*/
+    transition: opacity 250ms ease-in-out;
+        
+    }
+        
+/*  щоб не скролились сторінка. */
+body:has(.backdrop.is-open) {
+    overflow: hidden;
+    }
+        
+/* щоб появивилось модальне вікно*/
+.backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+
+    }
+
+
 .modal {
     border: 1px solid #000;
     border-radius: 4px;
@@ -751,26 +768,22 @@ ul.social-icons svg {
 }
 
 .agreement-checkbox {
-    background-color: transparent;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 16px; 
+    width: 16px;
     height: 16px;
     margin-right: 12px;
     border-radius: 2px;
-    fill: transparent; 
     border: 1px solid rgba(46, 47, 66, 0.4);
-
+    background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color, background-color;
-
-
-}
+    color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 .agreement-wrapper {
     font-size: 12px; 
     line-height: 1.17; 
@@ -779,22 +792,26 @@ ul.social-icons svg {
 
 }
 
-input[type="checkbox"]:checked+.agreement-wrapper>.agreement-checkbox {
+input[type="checkbox"]:checked+.agreement-wrapper .agreement-checkbox {
     background-color:#404bbf;
     color: #fff;
-}
-.input[type="checkbox"]:checked .agreement-checkbox-icon {
-    background-color: #404bbf;
-    fill: #F4F4FD;
     border: none;
+
 }
+
+
 .agreement-input:checked + .agreement-checkbox .agreement-checkbox-icon {
   fill: #f4f4fd;
 }
 .agreement-checkbox-icon {
     fill: currentColor;
-
 }
+
+
+
+
+
+
 
 .accent-tex {
     font-weight: 400;
@@ -812,6 +829,8 @@ input[type="checkbox"]:checked+.agreement-wrapper>.agreement-checkbox {
     text-decoration-skip-ink: none;
     color: #4d5ae5;
 }
+
+
 
 .button-submit {
    display: block;
